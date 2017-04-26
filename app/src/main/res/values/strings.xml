@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">TechnicianApp</string>
+    <string name="app_name">Technician</string>
+
+    <string name="login">Sign In</string>
+    <string name="my_account">My Account</string>
+    <string name="account_setting_panel">Account Settings Panel</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_up">Sign Up</string>
+
 </resources>

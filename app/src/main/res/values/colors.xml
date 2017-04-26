@@ -3,4 +3,27 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="heading_color">#FF3232</color>
+    <color name="toggleButtonColor">#8bc34a</color>
+    <color name="tabs_back_color">#33691e</color>
+    <color name="white">#FFF</color>
+    <color name="product_categories">#FF3232</color>
+    <color name="transp">#80000000</color>
+    <color name="transp_hover">#FFEE58</color>
+    <color name="transp_yello">#9979AB20</color>
+    <color name="green_trans">#997EA72B</color>
+    <color name="white_overlay_8x">#000000</color>
+    <color name="product_title">#222222</color>
+    <color name="btn_atc_yellow">#99A62B</color>
+    <color name="btn_atc_lime">#00897B</color>
+    <color name="teal">#B2DFDB</color>
+    <color name="color_read_more">#337ab7</color>
+    <color name="green">#79AB20</color>
+    <color name="offer_end_back">#323232</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="black">@android:color/black</color>
+    <color name="cart_heading">#E0F2F1</color>
+    <color name="btn_remove_color">@android:color/black</color>
+    <color name="brand_primary">#FF5620</color>
+    <color name="brand_accent">#FE9700</color>
 </resources>
