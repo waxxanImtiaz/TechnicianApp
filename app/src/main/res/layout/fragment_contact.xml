@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sp_status"
-                style="@style/textViewStyle"
+                style="@style/sp_style"
                 />
         </TableRow>
         <TableRow>

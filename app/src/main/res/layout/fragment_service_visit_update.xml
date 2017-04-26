@@ -66,7 +66,7 @@
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/textViewStyle"
+                style="@style/sp_style"
                 android:id="@+id/sp_item_category" />
         </TableRow>
         <TableRow>
@@ -80,7 +80,7 @@
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/textViewStyle"
+                style="@style/sp_style"
                 android:id="@+id/sp_status" />
         </TableRow>
         <TableRow>

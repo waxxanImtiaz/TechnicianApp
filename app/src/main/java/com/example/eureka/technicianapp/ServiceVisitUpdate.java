@@ -39,6 +39,7 @@ public class ServiceVisitUpdate extends Fragment {
         return v;
     }
 
+
     public void init(View v){
         ArrayAdapter<String> itemCatAdapter = new ArrayAdapter<String>(getContext(), R.layout.spinner_item,itemCategoryList);
         spItemCategory = (Spinner)v.findViewById(R.id.sp_item_category);
