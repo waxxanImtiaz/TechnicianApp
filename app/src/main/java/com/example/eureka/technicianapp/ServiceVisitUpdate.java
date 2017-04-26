@@ -33,8 +33,10 @@ public class ServiceVisitUpdate extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.fragment_service_visit_update, container, false);
+        init(v);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_service_visit_update, container, false);
+        return v;
     }
 
     public void init(View v){
