@@ -26,4 +26,5 @@
     <color name="btn_remove_color">@android:color/black</color>
     <color name="brand_primary">#FF5620</color>
     <color name="brand_accent">#FE9700</color>
+    <color name="blue">#2196F3</color>
 </resources>

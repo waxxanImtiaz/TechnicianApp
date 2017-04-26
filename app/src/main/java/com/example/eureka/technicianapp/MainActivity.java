@@ -25,13 +25,6 @@ public class MainActivity extends AppCompatActivity{
     private TabLayout tabLayout;
     private CustomViewPager viewPager;
 
-    private File sharedPrefFile;
-
-    private final int LOGIN_ACIVITY_VALIDATOR = 22;
-    private final int SIGN_UP_FLAG = 23;
-    private int index;
-
-    private final int WISH_LIST = 122;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +35,7 @@ public class MainActivity extends AppCompatActivity{
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        toolbar.showOverflowMenu();
 
         //INITIALIZING TABS
         viewPager = (CustomViewPager) findViewById(R.id.viewpager);
@@ -52,27 +45,7 @@ public class MainActivity extends AppCompatActivity{
 
         tabLayout.setupWithViewPager(viewPager);
 
-        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                index = tab.getPosition();
-                switch (index) {
-                    case 1:
 
-                        break;
-                }
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
 
         setupTabIcons();
 
@@ -99,9 +72,9 @@ public class MainActivity extends AppCompatActivity{
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-//        adapter.addFragment(new ProductsFragment(), "One");
-//        adapter.addFragment(new WishList(), "Two");
-//        adapter.addFragment(new Cart(), "Three");
+        adapter.addFragment(new Profile(), "Profile");
+        adapter.addFragment(new Contact(), "Contact");
+        adapter.addFragment(new ServiceVisitUpdate(), "Service Visit Update");
         viewPager.setAdapter(adapter);
     }
 
