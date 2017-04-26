@@ -84,8 +84,8 @@ public class Main3Activity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.login) {
-            startActivity(new Intent(Main3Activity.this,LoginActivity.class));
+        if (id == R.id.sign_out) {
+
             return true;
         }
 
