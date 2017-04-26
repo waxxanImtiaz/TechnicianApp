@@ -6,6 +6,7 @@
     <string name="account_setting_panel">Account Settings Panel</string>
     <string name="sign_out">Sign Out</string>
     <string name="sign_up">Sign Up</string>
+    <string name="upload_picture">Upload Image</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
