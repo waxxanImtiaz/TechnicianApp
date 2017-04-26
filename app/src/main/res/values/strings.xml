@@ -45,4 +45,10 @@
     <string name="item_cateogry">Item Category:</string>
     <string name="payment_recieved">Payment Recieved:</string>
     <string name="payment_recieved_hint">Enter payment recieved</string>
+
+
+    <array name="item_cateogry_list">
+        <item>Refrigerator</item>
+        <item>AC</item>
+    </array>
 </resources>
