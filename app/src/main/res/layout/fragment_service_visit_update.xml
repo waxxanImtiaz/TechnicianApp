@@ -97,7 +97,9 @@
                 style="@style/textViewStyle"
                 android:minLines="5"
                 android:padding="5dp"
+                android:inputType="textMultiLine"
                 android:gravity="start"
+                android:scrollbars="vertical"
                 android:background="@drawable/et_search"
                 android:hint="@string/remarks_hint" />
         </TableRow>
@@ -110,12 +112,14 @@
                 />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/textViewStyle"
                 android:background="@drawable/et_search"
                 android:minLines="5"
+                android:inputType="textMultiLine"
                 android:gravity="start"
+                android:scrollbars="vertical"
                 android:padding="5dp"
                 android:hint="@string/payment_recieved_hint" />
         </TableRow>
