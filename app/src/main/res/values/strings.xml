@@ -45,7 +45,7 @@
     <string name="item_cateogry">Item Category:</string>
     <string name="payment_recieved">Payment Recieved:</string>
     <string name="payment_recieved_hint">Enter payment recieved</string>
-
+    <string name="submit">Submit</string>
 
     <array name="item_cateogry_list">
         <item>Refrigerator</item>

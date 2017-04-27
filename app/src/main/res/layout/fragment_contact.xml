@@ -3,11 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.eureka.technicianapp.Contact">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:stretchColumns="*"
         android:shrinkColumns="*"
+        android:id="@+id/table"
         >
         <TableRow
             >
@@ -19,10 +23,10 @@
                 android:layout_column="0"
                 />
 
-            <TextView
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/textViewStyle"
+                style="@style/et_styles"
                 android:layout_column="1"
                 android:text="1024" />
         </TableRow>
@@ -50,15 +54,28 @@
                 />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/textViewStyle"
-                android:padding="5sp"
                 android:gravity="top"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:padding="5dp"
                 android:hint="@string/remarks_hint"
                 android:background="@drawable/et_search"
                 android:minLines="5"
                 />
         </TableRow>
          </TableLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/table"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            />
+    </RelativeLayout>
 </ScrollView>

@@ -3,12 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.eureka.technicianapp.ServiceVisitUpdate">
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:stretchColumns="*"
         android:shrinkColumns="*"
+        android:id="@+id/table"
         >
         <TableRow
             >
@@ -20,10 +23,10 @@
                 android:layout_column="0"
                 />
 
-            <TextView
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/textViewStyle"
+                style="@style/et_styles"
                 android:layout_column="1"
                 android:text="E6550" />
         </TableRow>
@@ -35,10 +38,10 @@
                 style="@style/textViewStyle"
                 />
 
-            <TextView
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/textViewStyle"
+                style="@style/et_styles"
                 android:text="11Ab2332" />
         </TableRow>
         <TableRow>
@@ -49,10 +52,10 @@
                 style="@style/textViewStyle"
                 />
 
-            <TextView
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/textViewStyle"
+                style="@style/et_styles"
                 android:text="xyz" />
         </TableRow>
         <TableRow>
@@ -92,7 +95,7 @@
                 />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/textViewStyle"
                 android:minLines="5"
@@ -121,9 +124,21 @@
                 android:gravity="start"
                 android:scrollbars="vertical"
                 android:padding="5dp"
-                android:hint="@string/payment_recieved_hint" />
+                android:hint="@string/payment_recieved_hint"
+                android:id="@+id/editText" />
         </TableRow>
 
     </TableLayout>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/table"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/submit"
+        />
+</RelativeLayout>
 </ScrollView>
