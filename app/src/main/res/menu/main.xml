@@ -13,9 +13,15 @@
         <!--android:title="@string/upload_picture"-->
         <!--app:showAsAction="never" />-->
     <item
+        android:id="@+id/services_history"
+        android:orderInCategory="100"
+        android:title="@string/history"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/sign_out"
         android:orderInCategory="100"
         android:title="@string/sign_out"
         app:showAsAction="never" />
+
 
 </menu>
