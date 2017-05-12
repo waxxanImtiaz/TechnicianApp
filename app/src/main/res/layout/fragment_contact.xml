@@ -11,96 +11,97 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.eureka.technicianapp.Contact"
     >
-
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_centerVertical="true"
-    >
-    <RelativeLayout
+    android:layout_centerInParent="true">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/logo"
+            android:layout_gravity="center"
             android:layout_centerHorizontal="true"
             />
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:stretchColumns="*"
-        android:layout_marginTop="30dp"
-        android:paddingBottom="10dp"
-        android:layout_centerVertical="true"
-        android:shrinkColumns="*"
-        android:id="@+id/table"
-        >
-        <TableRow
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="10dp"
+            android:layout_centerVertical="true"
+            android:shrinkColumns="*"
+            android:id="@+id/table"
             >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/complain_number"
-                style="@style/textViewStyle"
-                android:layout_column="0"
-                />
+            <TableRow
+                >
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/et_styles"
-                android:layout_column="1"
-                android:text="1024" />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sttus"
-                style="@style/textViewStyle"
-                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complain_number"
+                    style="@style/textViewStyle"
+                    android:layout_column="0"
+                    android:id="@+id/textView2" />
 
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sp_status"
-                style="@style/sp_style"
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/et_styles"
+                    android:layout_column="1"
+                    android:enabled="false"
+                    android:hint="1232" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sttus"
+                    android:layout_column="0"
+                    style="@style/textViewStyle"
+                    />
 
-                />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/remarks"
-                style="@style/textViewStyle"
-                />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_status"
+                    style="@style/sp_style"
+                    android:layout_column="1"
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                style="@style/textViewStyle"
-                android:gravity="top"
-                android:inputType="textMultiLine"
-                android:scrollbars="vertical"
-                android:padding="5dp"
-                android:hint="@string/remarks_hint"
-                android:background="@drawable/et_search"
-                android:minLines="5"
-                />
-        </TableRow>
-         </TableLayout>
+                    />
+            </TableRow>
+
+
+             </TableLayout>
+
+        <MultiAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            style="@style/textViewStyle"
+            android:gravity="top"
+            android:layout_below="@+id/table"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:id="@+id/remarks"
+            android:hint="@string/remarks_hint"
+            android:background="@drawable/et_search"
+            android:minLines="5"
+            />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@+id/table"
+
+            android:layout_below="@+id/remarks"
             android:text="@string/submit"
             android:textColor="@color/white"
             android:layout_margin="10dp"
             android:background="@color/colorPrimary"
             />
-    </RelativeLayout>
+    </LinearLayout>
 </ScrollView>
 </RelativeLayout>

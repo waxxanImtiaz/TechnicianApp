@@ -1,148 +1,193 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.eureka.technicianapp.ServiceVisitUpdate">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="10dp">
-    <TableLayout
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stretchColumns="*"
-        android:layout_centerVertical="true"
-        android:shrinkColumns="*"
-        android:id="@+id/table"
-        >
-        <TableRow
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/model"
-                style="@style/textViewStyle"
-                android:layout_column="0"
-                />
+        android:layout_centerInParent="true">
 
-            <EditText
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/et_styles"
-                android:layout_column="1"
-                android:text="E6550" />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/serial"
-                style="@style/textViewStyle"
-                />
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+                <include layout="@layout/form_field_message" />
+            </LinearLayout>
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/et_styles"
-                android:text="11Ab2332" />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/brand"
-                style="@style/textViewStyle"
-                />
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/et_styles"
-                android:text="xyz" />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/item_cateogry"
-                style="@style/textViewStyle"
-                />
 
-            <Spinner
-                android:layout_width="wrap_content"
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/sp_style"
-                android:id="@+id/sp_item_category" />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sttus"
-                style="@style/textViewStyle"
-                />
+                android:shrinkColumns="8"
+                android:layout_marginBottom="20dp"
+                android:stretchColumns="1">
 
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/sp_style"
-                android:id="@+id/sp_status" />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/remarks"
-                style="@style/textViewStyle"
-                />
+                <TableRow>
 
-            <EditText
+                    <TextView
+                        style="@style/textViewStyle"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:layout_column="0"
+                        android:text="@string/model" />
+
+                    <EditText
+                        style="@style/et_styles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:text="E6550"
+                        android:id="@+id/editText" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/textViewStyle"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:text="@string/serial" />
+
+                    <EditText
+                        style="@style/et_styles"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="11Ab2332" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/textViewStyle"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:text="@string/brand"
+                        android:id="@+id/textView3" />
+
+                    <EditText
+                        style="@style/et_styles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:text="xyz" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/textViewStyle"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:text="@string/item_cateogry" />
+
+                    <Spinner
+                        android:id="@+id/sp_item_category"
+                        style="@style/sp_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/textViewStyle"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:text="@string/sttus" />
+
+                    <Spinner
+                        android:id="@+id/sp_status"
+                        style="@style/sp_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+
+                <TableRow
+                    >
+
+                    <TextView
+                        style="@style/textViewStyle"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+
+                        android:text="@string/payment_recieved"
+                         />
+
+                    <EditText
+                        style="@style/et_styles"
+                        android:layout_column="1"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Enter payment"
+                        android:id="@+id/editText2" />
+                </TableRow>
+
+            </TableLayout>
+
+            <MultiAutoCompleteTextView
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
                 style="@style/textViewStyle"
-                android:minLines="5"
-                android:padding="5dp"
+                android:gravity="top"
+                android:layout_below="@+id/table"
                 android:inputType="textMultiLine"
-                android:gravity="start"
-                android:scrollbars="vertical"
+                android:padding="5dp"
+                android:layout_margin="0dp"
+                android:id="@+id/remarks"
+                android:hint="@string/remarks_hint"
                 android:background="@drawable/et_search"
-                android:hint="@string/remarks_hint" />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/payment_recieved"
-                style="@style/textViewStyle"
+                android:minLines="5"
                 />
-
-            <EditText
+            <Button
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                style="@style/textViewStyle"
-                android:background="@drawable/et_search"
-                android:minLines="5"
-                android:inputType="textMultiLine"
-                android:gravity="start"
-                android:scrollbars="vertical"
-                android:padding="5dp"
-                android:hint="@string/payment_recieved_hint"
-                android:id="@+id/editText" />
-        </TableRow>
-
-    </TableLayout>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginTop="40dp"
-        android:background="@color/colorPrimary"
-        android:text="@string/submit"
-        android:layout_margin="10dp"
-        android:layout_below="@+id/table"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/button" />
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/remarks"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
-</ScrollView>
