@@ -1,4 +1,3 @@
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,189 +10,203 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.eureka.technicianapp.Profile">
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ivUserProfile"
-        android:src="@drawable/profilepicicon"/>
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Upload Image"
-            android:layout_below="@+id/ivUserProfile"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            />
-    </RelativeLayout>
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:stretchColumns="1"
-        android:layout_marginTop="10dp"
+            android:orientation="vertical">
 
-        >
-        <TableRow
-            >
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/name"
-              style="@style/textViewStyle"
-              android:layout_column="0"
-              />
-
-            <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-                style="@style/textViewStyle"
-                android:layout_column="1"
-              android:text="Rehman" />
-        </TableRow>
-        <TableRow>
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/email"
-              style="@style/textViewStyle"
-              />
-
-            <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-                style="@style/textViewStyle"
-              android:text="rehman@gmail.com" />
-        </TableRow>
-        <TableRow>
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/email"
-              style="@style/textViewStyle"
-              />
-
-            <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-                style="@style/textViewStyle"
-              android:text="rehman@gmail.com" />
-        </TableRow>
-        <TableRow>
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/address"
-              style="@style/textViewStyle"
-              />
-
-            <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-                style="@style/textViewStyle"
-              android:text="DHA Phase II" />
-        </TableRow>
-        <TableRow>
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/nic"
-              style="@style/textViewStyle"
-              />
-
-            <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-                style="@style/textViewStyle"
-              android:text="44304-20123212-3" />
-        </TableRow>
-        <TableRow>
-            <TextView
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/city"
-                style="@style/textViewStyle"
-                />
+                android:layout_gravity="center">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/textViewStyle"
-                android:text="Karachi" />
-        </TableRow>
-        <TableRow>
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/area"
-              style="@style/textViewStyle"
-              />
+                <Button
+                    android:id="@+id/btnUploadImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/ivUserProfile"
+                    android:layout_centerHorizontal="true"
+                    android:text="Upload Image" />
 
-            <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-                style="@style/textViewStyle"
-              android:text="Mallir" />
-        </TableRow>
-        <TableRow>
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/category"
-              style="@style/textViewStyle"
-              />
+                <ImageView
+                    android:id="@+id/ivUserProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/profilepicicon" />
+            </RelativeLayout>
 
-            <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-                style="@style/textViewStyle"
-              android:text="xyz" />
-        </TableRow>
-        <TableRow>
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/attended_complaints"
-              style="@style/textViewStyle"
-              />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-                style="@style/textViewStyle"
-              android:text="xyz" />
-        </TableRow>
-        <TableRow>
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/total_earned"
-              style="@style/textViewStyle"
-              />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:stretchColumns="1"
 
-            <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-                style="@style/textViewStyle"
-              android:text="Rs 20,000" />
-        </TableRow>
-    </TableLayout>
-    </HorizontalScrollView>
-</LinearLayout>
-</ScrollView>
+                    >
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:text="@string/name" />
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="Rehman" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email" />
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="rehman@gmail.com" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/address" />
+
+                        <TextView
+                            android:id="@+id/tvAddresss"
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DHA Phase II" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nic" />
+
+                        <TextView
+                            android:id="@+id/tvNic"
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="44304-20123212-3" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/city" />
+
+                        <TextView
+                            android:id="@+id/tvCity"
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Karachi" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/area" />
+
+                        <TextView
+                            android:id="@+id/tvArea"
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mallir" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/category" />
+
+                        <TextView
+                            android:id="@+id/tvCategory"
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="xyz" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/attended_complaints" />
+
+                        <TextView
+                            android:id="@+id/tvAttendedComplains"
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="xyz" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/total_earned" />
+
+                        <TextView
+                            android:id="@+id/earnedRev"
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs 20,000" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

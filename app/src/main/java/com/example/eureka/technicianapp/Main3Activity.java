@@ -85,7 +85,11 @@ public class Main3Activity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.sign_out) {
-            startActivity(new Intent(Main3Activity.this,LoginActivity.class));
+            startActivity(new Intent(Main3Activity.this, LoginActivity.class));
+            return true;
+        }
+        else if (id == R.id.services_history) {
+            startActivity(new Intent(Main3Activity.this,ServicesHistory.class));
             return true;
         }
 
