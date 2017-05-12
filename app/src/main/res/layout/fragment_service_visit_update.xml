@@ -5,11 +5,13 @@
     tools:context="com.example.eureka.technicianapp.ServiceVisitUpdate">
 <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp">
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:stretchColumns="*"
+        android:layout_centerVertical="true"
         android:shrinkColumns="*"
         android:id="@+id/table"
         >
@@ -96,7 +98,7 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="120dp"
                 style="@style/textViewStyle"
                 android:minLines="5"
                 android:padding="5dp"
@@ -116,7 +118,7 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="120dp"
                 style="@style/textViewStyle"
                 android:background="@drawable/et_search"
                 android:minLines="5"
@@ -133,12 +135,14 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/table"
         android:textColor="@color/white"
-        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
         android:background="@color/colorPrimary"
         android:text="@string/submit"
-        />
+        android:layout_margin="10dp"
+        android:layout_below="@+id/table"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button" />
 </RelativeLayout>
 </ScrollView>
