@@ -34,7 +34,7 @@
                 android:id="@+id/table"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:shrinkColumns="8"
+                android:shrinkColumns="0"
                 android:layout_marginBottom="20dp"
                 android:stretchColumns="1">
 
@@ -174,6 +174,7 @@
                 android:inputType="textMultiLine"
                 android:padding="5dp"
                 android:layout_margin="0dp"
+                android:scrollbars="vertical"
                 android:id="@+id/remarks"
                 android:hint="@string/remarks_hint"
                 android:background="@drawable/et_search"

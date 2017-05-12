@@ -20,13 +20,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
        >
-        <ImageView
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/logo"
-            android:layout_gravity="center"
-            android:layout_centerHorizontal="true"
-            />
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+            <include layout="@layout/form_field_message" />
+        </LinearLayout>
 
         <TableLayout
             android:layout_width="match_parent"
@@ -35,14 +36,14 @@
             android:layout_marginTop="30dp"
             android:paddingBottom="10dp"
             android:layout_centerVertical="true"
-            android:shrinkColumns="*"
+
             android:id="@+id/table"
             >
             <TableRow
                 >
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/complain_number"
                     style="@style/textViewStyle"
@@ -50,12 +51,13 @@
                     android:id="@+id/textView2" />
 
                 <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     style="@style/et_styles"
                     android:layout_column="1"
                     android:enabled="false"
-                    android:hint="1232" />
+                    android:hint="1232"
+                    android:id="@+id/editText3" />
             </TableRow>
             <TableRow>
                 <TextView
@@ -87,6 +89,7 @@
             android:layout_below="@+id/table"
             android:inputType="textMultiLine"
             android:padding="5dp"
+            android:scrollbars="vertical"
             android:id="@+id/remarks"
             android:hint="@string/remarks_hint"
             android:background="@drawable/et_search"
