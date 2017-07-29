@@ -14,8 +14,8 @@ import org.w3c.dom.Text;
 
 public class Profile extends Fragment {
 
-    private ImageView ivUserProfile;
-    private Button btnUploadImage;
+//    private ImageView ivUserProfile;
+//    private Button btnUploadImage;
     private TextView tvName;
     private TextView tvEmail;
     private TextView tvAddresss;
@@ -46,8 +46,8 @@ public class Profile extends Fragment {
         return view;
     }
     public void init(View view){
-        ivUserProfile = (ImageView)view.findViewById(R.id.ivUserProfile);
-        btnUploadImage = (Button)view.findViewById(R.id.btnUploadImage);
+//        ivUserProfile = (ImageView)view.findViewById(R.id.ivUserProfile);
+//        btnUploadImage = (Button)view.findViewById(R.id.btnUploadImage);
         tvName = (TextView)view.findViewById(R.id.tvName);
         tvEmail = (TextView)view.findViewById(R.id.tvEmail);
         tvAddresss = (TextView)view.findViewById(R.id.tvAddresss);
